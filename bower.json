@@ -1,7 +1,9 @@
 {
-    "name": "theamforest-exercises",
-    "version": "0.0.0",
-    "dependencies": {
-        "bootstrap": "3.3.7"
-    }
+  "name": "theamforest-exercises",
+  "version": "0.0.0",
+  "dependencies": {
+    "bootstrap": "3.3.7",
+    "simple-line-icons": "^2.4.1",
+    "components-font-awesome": "^4.7.0"
+  }
 }
