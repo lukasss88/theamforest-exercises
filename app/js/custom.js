@@ -113,9 +113,14 @@ $(document).ready( function() {
         $('html,body').animate({"scrollTop":winheight}, 500);
     });
 
-
 });
 
+$(function() {
+    $('#button-bot-href').on('click', function(e) {
+        e.preventDefault();
+        $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+    });
+});
 
 /*====================================
  PROGRESSBAR SCRIPTS
