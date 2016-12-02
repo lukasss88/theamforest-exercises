@@ -481,6 +481,11 @@ ul {
     z-index: 51;
     transition: 0.3s;
 }
+.name-scroll {
+    color: #E45064;
+}
+
+
 @-webkit-keyframes fadeIn {
 
     0% {
