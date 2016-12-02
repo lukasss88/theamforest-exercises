@@ -1,16 +1,17 @@
 {
-  "name": "voix",
+  "name": "theamforest-exercises",
   "version": "1.0.0",
   "description": "",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aniaw/voix.git"
+    "url": "https://github.com/aniaw/theamforest-exercises.git"
   },
   "license": "ISC",
   "devDependencies": {
     "grunt": "1.0.1",
     "grunt-contrib-connect": "1.0.2",
     "grunt-contrib-watch": "1.0.0",
+    "grunt-gh-pages": "2.0.0",
     "serve-static": "1.11.1"
   }
 }
