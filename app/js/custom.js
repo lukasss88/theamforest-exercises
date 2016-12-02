@@ -107,8 +107,14 @@ $(document).ready( function() {
         $("ul").removeClass('sidebar-active');
         document.getElementById("main").style.marginLeft = "0px";
     })
-});
 
+    $(this).on('click', '.button_bot', function() {
+        var scrollheight = winheight;
+        $('html,body').animate({"scrollTop":winheight}, 500);
+    });
+
+
+});
 
 
 /*====================================
