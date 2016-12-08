@@ -112,7 +112,6 @@ $(document).ready( function() {
         var scrollheight = winheight;
         $('html,body').animate({'scrollTop':winheight}, 500);
     });
-
 });
 
 /*====================================
@@ -125,7 +124,6 @@ $(function() {
     });
 });
 
-
 /*====================================
  NAME CHANGE COLOR SCRIPTS
  ======================================*/
@@ -137,7 +135,6 @@ $(window).on('scroll', function() {
     }
 });
 
-
 /*====================================
  PROGRESSBAR SCRIPTS
  ======================================*/
@@ -146,7 +143,6 @@ $(function() {
 
     var $meters = $('.progressbar');
     var $section = $('#skills');
-
 
     function loadDaBars() {
         $meters.each(function() {
@@ -209,7 +205,6 @@ $(function() {
             $(document).unbind('scroll');
         }
     });
-
 });
 
 /*====================================
@@ -307,8 +302,6 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
             }
             nodeIndex++;
         }
-
-
 
         if(index >= 0) {
             // open PhotoSwipe if valid index found
@@ -424,7 +417,8 @@ initPhotoSwipeFromDOM('.my-gallery');
 /*====================================
  SOCIAL ICON SCRIPTS
  ======================================*/
-$(window).on('scroll', function() {
+$(window).on('scroll', function(event) {
+    event.preventDefault();
     if($(window).scrollTop() > 780) {
         $('.footer_soc_icons_show').css('top','0px');
         $('.social_icon_footer a').css('top', '0px');
