@@ -3,119 +3,137 @@
  SIDEBAR MENU SCRIPTS
  ======================================*/
 
-/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
-function closeNav() {
-
-
-    document.getElementById("main").style.marginLeft = "0";
-
-}
-
-
-
 $(document).ready(function(){
 
-    $(".button-menu").click(function(){
-        $(".name").addClass('move-name');
-        $(".lm_bg").addClass('lm_bg_active');
-        $("ul").removeClass('sidebar-hide');
-        $("ul").addClass('sidebar-active');
-        $("ul a:nth-child(2)").removeClass('menu-1')
-        $("ul a:nth-child(2)").addClass('menu-1-transition');
-        $("ul a:nth-child(3)").removeClass('menu-2');
-        $("ul a:nth-child(3)").addClass('menu-2-transition');
-        $("ul a:nth-child(4)").removeClass('menu-3');
-        $("ul a:nth-child(4)").addClass('menu-3-transition');
-        $("ul a:nth-child(5)").removeClass('menu-4');
-        $("ul a:nth-child(5)").addClass('menu-4-transition');
-        $("ul a:nth-child(6)").removeClass('menu-5');
-        $("ul a:nth-child(6)").addClass('menu-5-transition');
-        $("ul a:nth-child(7)").removeClass('menu-6');
-        $("ul a:nth-child(7)").addClass('menu-6-transition');
+    $('.button-menu').click(function(){
+        $('.name').addClass('move-name');
+        $('.lm_bg').addClass('lm_bg_active');
+        $('ul').removeClass('sidebar-hide');
+        $('ul').addClass('sidebar-active');
+        $('ul a:nth-child(2)').removeClass('menu-1')
+        $('ul a:nth-child(2)').addClass('menu-1-transition');
+        $('ul a:nth-child(3)').removeClass('menu-2');
+        $('ul a:nth-child(3)').addClass('menu-2-transition');
+        $('ul a:nth-child(4)').removeClass('menu-3');
+        $('ul a:nth-child(4)').addClass('menu-3-transition');
+        $('ul a:nth-child(5)').removeClass('menu-4');
+        $('ul a:nth-child(5)').addClass('menu-4-transition');
+        $('ul a:nth-child(6)').removeClass('menu-5');
+        $('ul a:nth-child(6)').addClass('menu-5-transition');
+        $('ul a:nth-child(7)').removeClass('menu-6');
+        $('ul a:nth-child(7)').addClass('menu-6-transition');
+
+        if($(window).scrollTop() > 920) {
+            $('.name').css('color', 'white');
+        }
 
     });
-    $(".closebtn").click(function(){
-        $(".name").removeClass('move-name');
-        $(".lm_bg").removeClass('lm_bg_active');
-        $("ul").removeClass('sidebar-active');
-        $("ul").addClass('sidebar-hide');
-        $("ul a:nth-child(2)").addClass('menu-1');
-        $("ul a:nth-child(2)").removeClass('menu-1-transition');
-        $("ul a:nth-child(3)").addClass('menu-2');
-        $("ul a:nth-child(3)").removeClass('menu-2-transition');
-        $("ul a:nth-child(4)").addClass('menu-3');
-        $("ul a:nth-child(4)").removeClass('menu-3-transition');
-        $("ul a:nth-child(5)").addClass('menu-4');
-        $("ul a:nth-child(5)").removeClass('menu-4-transition');
-        $("ul a:nth-child(6)").addClass('menu-5');
-        $("ul a:nth-child(6)").removeClass('menu-5-transition');
-        $("ul a:nth-child(7)").addClass('menu-6');
-        $("ul a:nth-child(7)").removeClass('menu-6-transition');
+    $('.closebtn').click(function(){
+        $('.name').removeClass('move-name');
+        $('.lm_bg').removeClass('lm_bg_active');
+        $('ul').removeClass('sidebar-active');
+        $('ul').addClass('sidebar-hide');
+        $('ul a:nth-child(2)').addClass('menu-1');
+        $('ul a:nth-child(2)').removeClass('menu-1-transition');
+        $('ul a:nth-child(3)').addClass('menu-2');
+        $('ul a:nth-child(3)').removeClass('menu-2-transition');
+        $('ul a:nth-child(4)').addClass('menu-3');
+        $('ul a:nth-child(4)').removeClass('menu-3-transition');
+        $('ul a:nth-child(5)').addClass('menu-4');
+        $('ul a:nth-child(5)').removeClass('menu-4-transition');
+        $('ul a:nth-child(6)').addClass('menu-5');
+        $('ul a:nth-child(6)').removeClass('menu-5-transition');
+        $('ul a:nth-child(7)').addClass('menu-6');
+        $('ul a:nth-child(7)').removeClass('menu-6-transition');
+
+        if($(window).scrollTop() > 920) {
+            $('.name').css('color', '#E45064');
+        }
     });
 
 });
 $(document).ready( function() {
 
-    $(".button-menu").click(function () {
+    $('.button-menu').click(function () {
         $('#mySidenav').addClass('opened');
         /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
-        document.getElementById("main").style.marginLeft = "386px";
-        document.body.style.backgroundColor = "#272727";
+        $('#main').css('marginLeft', '386px');
+
+        $('body').css('backgroundColor', '#272727');
     })
-    $(".closebtn").click(function () {
+    $('.closebtn').click(function () {
         $('#mySidenav').removeClass('opened');
+        $('#main').css('marginLeft', '0px');
     });
     $('.menu-1').click(function() {
         $('#mySidenav').removeClass('opened');
-        $(".name").removeClass('move-name');
-        $(".lm_bg").removeClass('lm_bg_active');
-        $("ul").removeClass('sidebar-active');
-        document.getElementById("main").style.marginLeft = "0px";
+        $('.name').removeClass('move-name');
+        $('.lm_bg').removeClass('lm_bg_active');
+        $('ul').removeClass('sidebar-active');
+        $('#main').css('marginLeft', '0px');
     })
     $('.menu-2').click(function() {
         $('#mySidenav').removeClass('opened');
-        $(".name").removeClass('move-name');
-        $(".lm_bg").removeClass('lm_bg_active');
-        $("ul").removeClass('sidebar-active');
-        document.getElementById("main").style.marginLeft = "0px";
+        $('.name').removeClass('move-name');
+        $('.lm_bg').removeClass('lm_bg_active');
+        $('ul').removeClass('sidebar-active');
+        $('#main').css('marginLeft', '0px');
     })
     $('.menu-3').click(function() {
         $('#mySidenav').removeClass('opened');
-        $(".name").removeClass('move-name');
-        $(".lm_bg").removeClass('lm_bg_active');
-        $("ul").removeClass('sidebar-active');
-        document.getElementById("main").style.marginLeft = "0px";
+        $('.name').removeClass('move-name');
+        $('.lm_bg').removeClass('lm_bg_active');
+        $('ul').removeClass('sidebar-active');
+        $('#main').css('marginLeft', '0px');
     })
     $('.menu-4').click(function() {
         $('#mySidenav').removeClass('opened');
-        $(".name").removeClass('move-name');
-        $(".lm_bg").removeClass('lm_bg_active');
-        $("ul").removeClass('sidebar-active');
-        document.getElementById("main").style.marginLeft = "0px";
+        $('.name').removeClass('move-name');
+        $('.lm_bg').removeClass('lm_bg_active');
+        $('ul').removeClass('sidebar-active');
+        $('#main').css('marginLeft', '0px');
     })
     $('.menu-5').click(function() {
         $('#mySidenav').removeClass('opened');
-        $(".name").removeClass('move-name');
-        $(".lm_bg").removeClass('lm_bg_active');
-        $("ul").removeClass('sidebar-active');
-        document.getElementById("main").style.marginLeft = "0px";
+        $('.name').removeClass('move-name');
+        $('.lm_bg').removeClass('lm_bg_active');
+        $('ul').removeClass('sidebar-active');
+        $('#main').css('marginLeft', '0px');
     })
     $('.menu-6').click(function() {
         $('#mySidenav').removeClass('opened');
-        $(".name").removeClass('move-name');
-        $(".lm_bg").removeClass('lm_bg_active');
-        $("ul").removeClass('sidebar-active');
-        document.getElementById("main").style.marginLeft = "0px";
+        $('.name').removeClass('move-name');
+        $('.lm_bg').removeClass('lm_bg_active');
+        $('ul').removeClass('sidebar-active');
+        $('#main').css('marginLeft', '0px');
     })
 
     $(this).on('click', '.button_bot', function() {
         var scrollheight = winheight;
-        $('html,body').animate({"scrollTop":winheight}, 500);
+        $('html,body').animate({'scrollTop':winheight}, 500);
     });
-
-
 });
 
+/*====================================
+ BUTTON BOTTOM SCRIPTS
+ ======================================*/
+$(function() {
+    $('#button-bot-href').on('click', function(e) {
+        e.preventDefault();
+        $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+    });
+});
+
+/*====================================
+ NAME CHANGE COLOR SCRIPTS
+ ======================================*/
+$(window).on('scroll', function() {
+    if($(window).scrollTop() > 920) {
+        $('.name').addClass('name-scroll');
+    } else {
+        $('.name').removeClass('name-scroll');
+    }
+});
 
 /*====================================
  PROGRESSBAR SCRIPTS
@@ -123,9 +141,8 @@ $(document).ready( function() {
 
 $(function() {
 
-    var $meters = $(".progressbar");
+    var $meters = $('.progressbar');
     var $section = $('#skills');
-
 
     function loadDaBars() {
         $meters.each(function() {
@@ -188,14 +205,7 @@ $(function() {
             $(document).unbind('scroll');
         }
     });
-
 });
-
-/*====================================
- SKROLLR SCRIPTS
- ======================================*/
-
-
 
 /*====================================
  PHOTOSWIPE SCRIPTS
@@ -292,8 +302,6 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
             }
             nodeIndex++;
         }
-
-
 
         if(index >= 0) {
             // open PhotoSwipe if valid index found
@@ -405,4 +413,20 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
 
 // execute above function
 initPhotoSwipeFromDOM('.my-gallery');
+
+/*====================================
+ SOCIAL ICON SCRIPTS
+ ======================================*/
+$(window).on('scroll', function(event) {
+    event.preventDefault();
+    if($(window).scrollTop() > 780) {
+        $('.footer_soc_icons_show').css('top','0px');
+        $('.social_icon_footer a').css('top', '0px');
+
+    } else {
+        $('.footer_soc_icons_show').css('top', '100px');
+        $('.social_icon_footer a').css('top', '100px');
+        $('.social_icon_footer').css('visibility', 'visible')
+    }
+});
 
